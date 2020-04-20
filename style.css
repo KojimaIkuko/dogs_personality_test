@@ -10,11 +10,15 @@ body {
   overflow-x: hidden;
 }
 header {
-  box-shadow: 0 0 10px #ccc;
+  background-color: #6495ed;
+  box-shadow: 0 0 10px #696969;
+}
+header > h1,
+header > p {
+  color: #faf0e6;
 }
 main {
   margin: 0 auto;
-  
 }
 .query_list {
   padding: 1px;
@@ -36,22 +40,21 @@ main {
 footer > p {
   text-align: center;
 }
-header,
 footer {
-  background-color: #f5deb3;
+  background-color: #191970;
+  color: #fff;
 }
 @media screen and (min-width: 320px){
   header {
     padding: 1vh 5%;
   }
   header > h1 {
-    padding-top: 5px;
+    padding-top: 10px;
     font-size: 24px;
     text-align: center;
   }
-  header > p > span {
-    display: inline-flex;
-    flex-direction: row;
+  header > p {
+    padding: 1vh 0;
   }
   .comment {
     width: 24px;
@@ -90,16 +93,15 @@ footer {
     width: 16vh;
     padding: 0.5em 1em;
     text-decoration: none;
-    background: #668ad8;/*ボタン色*/
+    background: #668ad8;
     color: #FFF;
     border-bottom: solid 4px #627295;
     border-radius: 3px;
   }
   .btn:active {
-    /*ボタンを押したとき*/
     -webkit-transform: translateY(4px);
-    transform: translateY(4px);/*下に動く*/
-    border-bottom: none;/*線を消す*/
+    transform: translateY(4px);
+    border-bottom: none;
   }
   .disp {
     margin: 30px auto;
