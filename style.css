@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url("backscreen.jpg");
+  background-attachment: fixed;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+header {
+  box-shadow: 0 0 10px #ccc;
+}
+main {
+  margin: 0 auto;
+  
+}
+.query_list {
+  padding: 1px;
+}
+.query_list_item,
+.disp {
+  background-color: #fffaf0;
+}
+.type_explanation {
+  color: #87cefa;
+}
+.type_name {
+  font-weight: bold;
+  color: #1e90ff;
+}
+#disp > #annotation {
+  border: solid 2px #808080;
+}
+footer > p {
+  text-align: center;
+}
+header,
+footer {
+  background-color: #f5deb3;
+}
+@media screen and (min-width: 320px){
+  header {
+    padding: 1vh 5%;
+  }
+  header > h1 {
+    padding-top: 5px;
+    font-size: 24px;
+    text-align: center;
+  }
+  header > p > span {
+    display: inline-flex;
+    flex-direction: row;
+  }
+  .comment {
+    width: 24px;
+  }
+  .query_list_item {
+    margin: 12px 5%;
+    width: 90%;
+    height: 50px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 0 10px #ccc;
+  }
+  .query_list_item > label {
+    width: 30px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+  }
+  .query_list_item > p {
+    margin: auto;
+    margin-left: 0;
+    font-size: 16px;
+  }
+  .btns {
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    text-align: center;
+  }
+  .btns > div {
+    display: inline-block;
+    margin: 0 5%;
+  }
+  .btn {
+    display: inline-block;
+    width: 16vh;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #668ad8;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+  }
+  .btn:active {
+    /*ボタンを押したとき*/
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+  }
+  .disp {
+    margin: 30px auto;
+    padding: 20px 5%;
+    width: 80%;
+    line-height: 36px;
+    box-shadow: 0 0 10px #ccc;
+  }
+  #disp > #annotation {
+    box-shadow: none;
+  }
+  footer {
+    height: 60px;
+  }
+  footer {
+    line-height: 60px;
+  }
+}
+
+@media screen and (min-width: 920px){
+  header {
+    height: 80px;
+  }
+  header > h1 > br {
+    display: none;
+  }
+  header > p {
+    text-align: center;
+  }
+  main {
+    width: 960px;
+    min-height: calc(100% - 80px);
+    margin-bottom: -80px;
+  }
+  .query_list_item > p > br {
+    display: none;
+  }
+  .type_explanation > br {
+    display: none;
+  }
+  .push,
+  footer {
+    height: 80px;
+  }
+  footer > p {
+    line-height: 80px;
+  }
+}
