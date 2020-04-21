@@ -99,6 +99,9 @@
     border: solid 2px #191970;
     text-align: center;
   }
+  .cancel_br {
+    display: none;
+  }
   footer {
     background-color: #191970;
     height: 60px;
@@ -132,7 +135,7 @@
     display: none;
   }
   .cancel_br {
-    display: none;
+    display: block;
   }
   .push,
   footer {
