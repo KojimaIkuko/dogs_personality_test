@@ -97,6 +97,8 @@
   #annotation {
     box-shadow: none;
     border: solid 2px #191970;
+  }
+  .link {
     text-align: center;
   }
   .cancel_br {
@@ -134,8 +136,8 @@
   .type_explanation > br {
     display: none;
   }
-  .cancel_br {
-    display: block;
+  #annotation > p {
+    text-align: center;
   }
   .push,
   footer {
