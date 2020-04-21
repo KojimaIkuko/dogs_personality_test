@@ -1,65 +1,38 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-body {
-  background-image: url("backscreen.jpg");
-  background-attachment: fixed;
-  height: 100vh;
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-header {
-  background-color: #6495ed;
-  box-shadow: 0 0 10px #696969;
-}
-header > h1,
-header > p {
-  color: #faf0e6;
-}
-main {
-  margin: 0 auto;
-}
-.query_list {
-  padding: 1px;
-}
-.query_list_item,
-.disp {
-  background-color: #fffaf0;
-}
-.type_explanation {
-  color: #87cefa;
-}
-.type_name {
-  font-weight: bold;
-  color: #1e90ff;
-}
-#disp > #annotation {
-  border: solid 2px #808080;
-}
-footer > p {
-  text-align: center;
-}
-footer {
-  background-color: #191970;
-  color: #fff;
-}
 @media screen and (min-width: 320px){
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-image: url("backscreen.jpg");
+    background-attachment: fixed;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
   header {
     padding: 1vh 5%;
+    background-color: #6495ed;
+    box-shadow: 0 0 10px #696969;
   }
   header > h1 {
     padding-top: 10px;
     font-size: 24px;
     text-align: center;
+    color: #faf0e6;
   }
   header > p {
     padding: 1vh 0;
+    color: #faf0e6;
   }
-  .comment {
-    width: 24px;
+  main {
+    margin: 0 auto;
+  }
+  .query_list {
+    padding: 1px;
   }
   .query_list_item {
+    background-color: #fffaf0;
     margin: 12px 5%;
     width: 90%;
     height: 50px;
@@ -104,20 +77,36 @@ footer {
     border-bottom: none;
   }
   .disp {
+    background-color: #fffaf0;
     margin: 30px auto;
     padding: 20px 5%;
     width: 80%;
     line-height: 36px;
     box-shadow: 0 0 10px #ccc;
   }
-  #disp > #annotation {
+  .type_explanation {
+    color: #87cefa;
+    text-align: center;
+  }
+  .type_name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1e90ff;
+    text-align: center;
+  }
+  #annotation {
     box-shadow: none;
+    border: solid 2px #191970;
+    text-align: center;
   }
   footer {
+    background-color: #191970;
     height: 60px;
-  }
-  footer {
     line-height: 60px;
+    color: #fff;
+  }
+  footer > p {
+    text-align: center;
   }
 }
 
@@ -140,6 +129,9 @@ footer {
     display: none;
   }
   .type_explanation > br {
+    display: none;
+  }
+  .cancel_br {
     display: none;
   }
   .push,
